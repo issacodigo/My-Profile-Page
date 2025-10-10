@@ -1,0 +1,161 @@
+::before,
+::after,
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root {
+/*Colors that will be used*/
+   --carribean-current: #206250;
+   --penn-red: #92140c;
+   --federal-blue: #1e0052;
+   --tangerine: #f58300;
+   --asparagus: #84A16B;
+
+   --options-border: #f58300;
+   --border-width: 3px;
+   --border-style: solid;
+
+   --font-color: #fefae0;    
+   --color-once-clicked: #4f4c40;
+
+/*Fonts that will be used*/
+   --head-font: "Baumans", system-ui;
+   --head-font-weight: 400;
+   --head-font-style: normal;
+   
+   --text-font:"Srisakdi", system-ui;
+   --text-font-weight: 400;
+   --text-font-style: normal;
+}
+
+/*Headers Design*/
+.headers {
+   background-color: var(--penn-red);
+
+   height: 80px;
+
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+
+   font-family: var(--head-font);
+   font-weight: var(--head-font-weight);
+   font-style: var(--head-font-style);
+   font-size: 11px;
+
+}
+
+.options {
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+
+   background-color: var(--penn-red);
+   border: var(--options-border), var(--border-width), var(--border-style);
+
+   height: 35px;
+   width: 85px;
+   border-radius: 20px;
+
+   color: var(--font-color);
+   text-decoration: none;
+}
+
+.options:hover {
+   background-color: var(--carribean-current);
+}
+
+
+/*Main Container Design*/
+.card-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+
+    background-color: var(--penn-red);
+
+    height: auto;
+    width: inherit;
+}
+
+.card-content {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-color: var(--carribean-current);
+    height: 500px;
+    width: 350px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+    box-shadow:-13px 13px 0px 0px rgba(0,0,0,0.1);
+}
+
+.card-description {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    margin-left: 10px;
+
+    text-align: left;
+}
+
+.card-description h1 {
+   color: var(--font-color);
+   font-family: var(--text-font);
+   font-weight: var(--text-font-weight);
+   font-style: var(--text-font-style);
+}
+
+.card-description p {
+   color: var(--font-color);
+   font-family: var(--head-font);
+   font-weight: var(--head-font-weight);
+   font-style: var(--head-font-style);
+}
+
+/*Footer Design*/
+.all-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--carribean-current);
+  
+    height: 80px;
+  }
+  
+  .all-footer div {
+    display: flex;
+    gap: 20px;
+  
+    align-items: center;
+    justify-content: flex-end;  
+  
+    margin-right: 20px;
+  }
+  
+  .all-footer p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    margin-left: 20px;
+  
+    font-size: 20px;
+    font-family: var(--text-font);
+    font-weight: 700;
+    font-style: var(--text-font-style);
+    color: var(--font-color);
+  }

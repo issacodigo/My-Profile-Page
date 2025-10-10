@@ -1,0 +1,109 @@
+::before,
+::after,
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root {
+/*Colors that will be used*/
+   --carribean-current: #206250;
+   --penn-red: #92140c;
+   --federal-blue: #1e0052;
+   --tangerine: #f58300;
+   --asparagus: #84A16B;
+
+   --options-border: #f58300;
+   --border-width: 3px;
+   --border-style: solid;
+
+   --font-color: #fefae0;    
+   --color-once-clicked: #4f4c40;
+
+/*Fonts that will be used*/
+   --head-font: "Baumans", system-ui;
+   --head-font-weight: 400;
+   --head-font-style: normal;
+   
+   --text-font:"Srisakdi", system-ui;
+   --text-font-weight: 400;
+   --text-font-style: normal;  
+}
+
+/*Headers Design*/
+.headers {
+   background-color: var(--penn-red);
+
+   height: 80px;
+
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+
+   font-family: var(--head-font);
+   font-weight: var(--head-font-weight);
+   font-style: var(--head-font-style);
+   font-size: 11px;
+
+}
+
+.options {
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+
+   background-color: var(--penn-red);
+   border: var(--options-border), var(--border-width), var(--border-style);
+
+   height: 35px;
+   width: 85px;
+   border-radius: 20px;
+
+   color: var(--font-color);
+   text-decoration: none;
+}
+
+.options:hover {
+   background-color: var(--carribean-current); 
+}
+
+/*Main Container Design*/
+.main-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    background-color: var(--penn-red);
+
+    width: inherit;
+}
+
+.main-container div {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+
+   text-align: center;
+
+   height: 280px;
+   width: 250px;
+
+   margin-top: 20px;
+   border-radius: 20px;
+}
+
+.card-one {
+   background-color: var(--carribean-current);
+   border: var(--tangerine), solid, 10px;
+}
+
+.card-two {
+   background-color: var(--asparagus);
+   border: var(--federal-blue), double, 10px;
+}
